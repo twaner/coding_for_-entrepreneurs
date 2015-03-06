@@ -32,6 +32,9 @@
               color: #ffffff;
           }
       </style>
+      {# Can be moved w/in <style> just remove from inherited views #}
+      {% block styles %}
+      {% endblock %}
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script lwc="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -46,11 +49,12 @@
     {%  block content %}
 
     {% endblock %}
-      <div class="container">
-      <hr>
+    <div class="row" style="margin-top: 80px; background-color: grey;">
+      <div class="container" style="text-align: center; padding: 20px;">
       <footer>
         <p>&copy; Company 2014</p>
       </footer>
+      </div>
     </div> <!-- /container -->
 
 

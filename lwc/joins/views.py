@@ -54,6 +54,7 @@ def share(request, ref_id):
 
 
 def home(request):
+    print("In home view")
     try:
         join_id = request.session['join_id_ref']
         obj = Join.objects.get(id=join_id)
