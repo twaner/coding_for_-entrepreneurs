@@ -18,6 +18,8 @@ try:
     print("WSGI IN TRY")
     application = Cling(get_wsgi_application())
 except:
+    print("WSGI IN PASS")
     pass
+
 
 
