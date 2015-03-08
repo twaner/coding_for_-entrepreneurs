@@ -3,9 +3,8 @@ __author__ = 'taiowawaner'
 from .base import *
 
 try:
-    # from .local import *
-    # live = False
-    live = True
+    from .local import *
+    live = False
 except:
     live = True
 
